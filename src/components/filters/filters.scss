@@ -1,0 +1,32 @@
+.Filters {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .filterKey-label {
+    margin-right: 8px;
+  }
+
+  .filterKey-input {
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    transition: border-color 0.3s linear, box-shadow 0.3s linear;
+
+    &:focus {
+      border-color: black;
+      box-shadow: 0 4px 8px lightgray;
+      outline: none;
+    }
+  }
+}

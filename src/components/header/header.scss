@@ -1,0 +1,54 @@
+.Header {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+  }
+
+  .link-wrapper {
+    list-style: none;
+
+  }
+
+  .link-wrapper:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .link {
+    color: gray;
+    text-decoration: unset;
+    white-space: nowrap;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: black;
+    }
+
+    &.active {
+      color: black;
+    }
+  }
+
+  &__user {
+    .logout-button {
+      margin-left: 20px;
+      width: 100px;
+      height: 32px;
+      background: white;
+      transition: box-shadow 0.3s linear;
+      border-radius: 4px;
+      border: 1px solid lightgray;
+
+      &:hover:not(:disabled) {
+        cursor: pointer;
+        box-shadow: 0 4px 8px lightgray;
+      }
+    }
+  }
+}

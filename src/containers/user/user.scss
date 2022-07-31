@@ -1,0 +1,35 @@
+.User {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &__avatar-wrapper {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__avatar {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  &__label {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__email {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
